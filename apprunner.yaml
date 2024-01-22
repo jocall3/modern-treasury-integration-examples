@@ -5,15 +5,15 @@ build:
     build:
       - pip install -r api/python/requirements.txt
 run: 
-  command: flask run -p 9001 --host=0.0.0.0
+  command: flask run -p 8080 --host=0.0.0.0
   network: 
-    port: 9001
+    port: 8080
   env:
     - name: FLASK_APP
       value: "api/python/app"
     - name: MT_ORG_ID
-      value: "<MT_ORG_ID>"
+      value: "7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0"
     - name: MT_PUB_KEY
-      value: "<MT_PUB_KEY>"
+      value: "publishable-test-N2U2MWIxYjEtZTZiMS00MDg4LThjYjMtYTk5NTQ0ZGJjMWMwOktCZkEyMm53ampjb3ZjUUNieENVbVhlVlFTcVZVYkdzaHI5ZjN5UGY4TEptMXhZajR1cVc3cVdMZ2pIM00yRVY="
     - name: MT_API_KEY
-      value: "<MT_API_KEY>"
+      value: "live-391aJGhLMPwbYvDThMmJeiJid2WZcjJ6jZLUniCgKt8aZFkSb49yRWEVJZJUZEbh"

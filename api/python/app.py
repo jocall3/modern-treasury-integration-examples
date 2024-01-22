@@ -8,14 +8,14 @@ from dotenv import load_dotenv
 from modern_treasury import ModernTreasury
 import requests
 load_dotenv(verbose=True)
-ORG_ID = os.environ.get("MT_ORG_ID")
-API_KEY = os.environ.get("MT_API_KEY")
-PUB_KEY = os.environ.get("MT_PUB_KEY")
+ORG_ID = os.environ.get("7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0")
+API_KEY = os.environ.get("live-391aJGhLMPwbYvDThMmJeiJid2WZcjJ6jZLUniCgKt8aZFkSb49yRWEVJZJUZEbh")
+PUB_KEY = os.environ.get("publishable-test-N2U2MWIxYjEtZTZiMS00MDg4LThjYjMtYTk5NTQ0ZGJjMWMwOktCZkEyMm53ampjb3ZjUUNieENVbVhlVlFTcVZVYkdzaHI5ZjN5UGY4TEptMXhZajR1cVc3cVdMZ2pIM00yRVY=")
 
 modern_treasury = ModernTreasury(
     # defaults to os.environ.get("MODERN_TREASURY_API_KEY")
-    api_key=API_KEY,
-    organization_id=ORG_ID,
+    api_key='live-391aJGhLMPwbYvDThMmJeiJid2WZcjJ6jZLUniCgKt8aZFkSb49yRWEVJZJUZEbh',
+    organization_id='7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0',
 )
 
 from flask import Flask, render_template, jsonify, request, session, redirect, url_for, Response
