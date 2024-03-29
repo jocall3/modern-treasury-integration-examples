@@ -9,7 +9,7 @@
     "debug": "^2.6.9",
     "depd": "^2.0.0",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2",
+    "express": "^4.19.2",
     "express-session": "^1.17.3",
     "modern-treasury": "^1.6.0",
     "ms": "^2.0.0",
